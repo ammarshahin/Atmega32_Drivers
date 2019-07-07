@@ -1,6 +1,10 @@
 #ifndef BASICTYPES_H_INCLUDED
 #define BASICTYPES_H_INCLUDED
 
+
+#define No_error  1
+#define error_happen 0
+
 typedef unsigned char              TU08;
 typedef signed char                TS08;
 typedef unsigned short int         TU16;
