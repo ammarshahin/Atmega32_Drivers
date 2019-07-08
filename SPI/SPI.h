@@ -1,9 +1,20 @@
-#ifndef  SPI_AVR_H_
-#define  SPI_AVR_H_
+/*
+ * SPI.h
+ *
+ * Created: 6/7/2019 7:19:08 PM
+ *  Author: ammar shahin
+ */ 
 
-#include "std_macros.h"
+
+#ifndef SPI_H_
+#define SPI_H_
+
+#include <avr/io.h>
+#include "BasicTypes.h"
+#include "BitMasking_Macros.h"
+
 void SPI_Master_Init();
 void SPI_Slave_Init();
-uint8_t SPI_Tx_Rx(uint8_t data);
+TU08 SPI_Tx_Rx(TU08 data);
 
-#endif
+#endif /* SPI_H_ */

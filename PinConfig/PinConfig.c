@@ -11,19 +11,19 @@ void Switch_init(PORTS Port , TU08 pin)
 {
 	switch(Port)
 	{
-		case A : 
+		case pA : 
 			CLR_BIT(DDRA,pin);
 			SET_BIT(PORTA,pin);
 			break;
-		case B :
+		case pB :
 			CLR_BIT(DDRB,pin);
 			SET_BIT(PORTB,pin);
 			break;
-		case C :
+		case pC :
 			CLR_BIT(DDRC,pin);
 			SET_BIT(PORTC,pin);
 			break;
-		case D :
+		case pD :
 			CLR_BIT(DDRD,pin);
 			SET_BIT(PORTD,pin);
 			break;
@@ -36,19 +36,19 @@ void Output_init(PORTS Port , TU08 pin)
 {
 	switch(Port)
 	{
-		case A :
+		case pA :
 			SET_BIT(DDRA,pin);
 			CLR_BIT(PORTA,pin);
 			break;
-		case B :
+		case pB :
 			SET_BIT(DDRB,pin);
 			CLR_BIT(PORTB,pin);
 			break;
-		case C :
+		case pC :
 			SET_BIT(DDRC,pin);
 			CLR_BIT(PORTC,pin);
 			break;
-		case D :
+		case pD :
 			SET_BIT(DDRD,pin);
 			CLR_BIT(PORTD,pin);
 			break;

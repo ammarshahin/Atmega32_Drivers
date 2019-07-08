@@ -1,18 +1,21 @@
 /*
  * uart.h
  *
- * Created: 12/7/2014 5:11:28 PM
- *  Author: safifi
+ * Created: 7/7/2019
+ *  Author: ammar shahin
  */ 
-
 
 #ifndef UART_H_
 #define UART_H_
-#include "std_macros.h"
-uint8_t Uart_Read();
-void Uart_init();
-void Uart_Write(uint8_t);
-uint8_t Uart_available();
-void Uart_Write_string(uint8_t *data);
+
+#include "BasicTypes.h"
+#include <avr/io.h>
+
+void UART_Init();
+TU08 UART_Recieve();
+void Uart_Write(TU08);
+TU08 Uart_available();
+void Uart_Write_string(TU08 *data);
+
 
 #endif /* UART_H_ */

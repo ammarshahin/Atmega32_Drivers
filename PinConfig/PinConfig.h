@@ -13,7 +13,7 @@
 #include "BitMasking_Macros.h"
 #include "BasicTypes.h"
 
-typedef enum{A,B,C,D}PORTS;
+typedef enum{pA,pB,pC,pD}PORTS;
 	
 void Switch_init(PORTS,TU08);
 void Output_init(PORTS,TU08);
